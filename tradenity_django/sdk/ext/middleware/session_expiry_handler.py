@@ -1,12 +1,12 @@
 from django.http.response import HttpResponseRedirect
 from django.conf import settings
 
-from tradenity.sdk import Tradenity
-from tradenity.sdk.exceptions import SessionExpiredException
+from tradenity import Configuration
+from tradenity.exceptions import SessionExpiredException
 
 
 def reset_session():
-    Tradenity.reset_current_session()
+    Configuration.AUTH_TOKEN_HOLDER.reset()
     return HttpResponseRedirect("/")
 
 

@@ -1,4 +1,4 @@
-from tradenity.sdk import AuthTokenHolder
+from tradenity.token_holder import AuthTokenHolder
 from tradenity_django.sdk.ext.middleware import CurrentRequestMiddleware
 
 
@@ -6,6 +6,7 @@ class DjangoAuthTokenHolder(AuthTokenHolder):
     AUTH_TOKEN_NAME = 'tradenity_auth_token'
 
     def __init__(self):
+        super(DjangoAuthTokenHolder, self).__init__()
         self._token = None
 
     @property
