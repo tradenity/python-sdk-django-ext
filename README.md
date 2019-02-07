@@ -1,5 +1,7 @@
-Welcome to Tradenity Flask framework SDK extensions.
+Welcome to Tradenity Django framework SDK extensions.
 ==========
+
+This extension library facilitates integration between Django applications and [Python SDK](https://github.com/tradenity/python-sdk) for [Tradenity ecommerce API](https://www.tradenity.com).
 
 ## Installation
 
@@ -10,7 +12,7 @@ This package is available through PyPI (Python Package Index), to install it typ
 Or, add this line to your application's requirements.txt:
 
 ```python
-tradenity-django-ext==0.1.0
+tradenity-django-ext==0.7.0
 ```
 
 And then execute:

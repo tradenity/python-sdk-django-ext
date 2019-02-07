@@ -23,7 +23,7 @@ test_requirements = [
 
 setup(
     name='tradenity-django-ext',
-    version='0.1.0',
+    version='0.7.0',
     description="Django extensions for Tradenity Python SDK",
     long_description=readme + '\n\n' + history,
     author="Joseph Fouad",
@@ -37,7 +37,7 @@ setup(
     install_requires=requirements,
     license="APACHE",
     classifiers=[
-        'Development Status :: 3 - Alpha',
+        'Development Status :: 5 - Production/Stable',
         'Intended Audience :: Developers',
         'License :: OSI Approved :: Apache Software License',
         'Natural Language :: English',
